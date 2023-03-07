@@ -174,9 +174,9 @@ website_count:
   # See: http://ibruce.info/2015/04/04/busuanzi/
   busuanzi_count:
     enable: true
-    site_uv: true
-    site_pv: true
-    page_pv: true
+    site_uv: false
+    site_pv: false
+    page_pv: false
 
 # ---------------------------------------------------------------------------------------
 # Local Search
