@@ -235,169 +235,58 @@
         </div>
 
         <div class="page-main-content-bottom">
-            .footer {
-  margin-top 20px !important
-  padding-top 20px !important
-  height auto    
-  min-height 100px
-  font-size 1rem
-  color var(--third-text-color)
-  background-color alpha($primary-color, 0.15)
-  border-radius 0 !important
-  redefine-container(0,0,0,0,false)
-  position relative
-
-  span {
-    vertical-align baseline !important
-  }
-
-  .odometer {
-    vertical-align baseline !important
-  }
-
-
-  a {
-    color var(--third-text-color)
-
-
-    &:hover {
-      color var(--primary-color)
-
-    }
-  }
-
-  .theme-info {
-    text-align left
-    position absolute
-    left 20px
-    top 45%
-    transform translateY(-50%)
-
-    .powered-by-container {
-      margin-bottom 10px
-      font-size 0.8rem
-
-      a {
-        font-size 1rem
-      }
-
-      svg {
-        position relative
-        top 2px
-      }
-    }
-
-    .theme-version-container {
-      font-size 0.8rem
-
-      a {
-        font-size 1rem
-      }
-
-    }
-
-    +redefine-tablet() {
-      position relative
-      text-align center
-      top 0 !important
-      left 0 !important
-      transform none !important
-    }
-
-    +redefine-mobile() {
-      position relative
-      text-align center
-      top 0 !important
-      left 0 !important
-      transform none !important
-    }
-  }
-
-  .copyright-info {
-    text-align center
-  }
-
-  .website-count {
-    text-align right
-    position absolute
-    right 20px
-    top 45%
-    transform translateY(-50%)
-
-    .busuanzi_container_site_pv {
-      display block !important
-      font-size 0.8rem
-
-
-    }
-
-    .busuanzi_value_site_uv {
-      font-size 1rem !important
-    }
-
-    .busuanzi_container_site_uv {
-      display block !important
-      font-size 0.8rem
-
-    }
-
-    .busuanzi_value_site_pv {
-      font-size 1rem !important
-    }
-
-    +redefine-tablet() {
-      position relative
-      text-align center
-      top 0 !important
-      right 0 !important
-      transform none !important
-
-      .busuanzi_container_site_pv {
-        display inline-block !important
-      }
-
-      .busuanzi_container_site_uv {
-        display inline-block !important
-      }
-    }
-
-    +redefine-mobile() {
-      position relative
-      text-align center
-      top 0 !important
-      right 0 !important
-      transform none !important
-
-      .busuanzi_container_site_pv {
-        display inline-block !important
-      }
-
-      .busuanzi_container_site_uv {
-        display inline-block !important
-      }
-    }
-  }
-
-
-  .info-container {
-    padding-bottom 10px
-    text-align center
-    margin-top 10px
-
-  }
-
-  .info-item {
-    margin 5px 0
-  }
-
-  .icon-animate {
-    animation icon-animate 1.2s ease-in-out infinite
-  }
-}
-
-
-
-
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2023</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-regular fa-computer-classic"></i>&nbsp;&nbsp;<a href="/">LFYX</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a> 驱动</span>
+                <br> 
+            <span class="theme-version-container">主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v1.1.1</a>
+        </div>
+        
+        
+        
+            <div id="start_time_div" style="display:none">
+                2023/2/14 12:00:00
+            </div>
+            <div>
+                博客已运行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小时 <span class="odometer" id="runtime_minutes"></span> 分钟 <span class="odometer" id="runtime_seconds"></span> 秒
+            </div>
+        
+        
+        
+            <script async data-pjax defer>
+                function odometer_init(){
+                        let el = document.getElementsByClassName('odometer');
+                        for (i = 0; i < el.length; i++) {
+                            od = new Odometer({
+                                el: el[i],
+                                format: '( ddd).dd',
+                                duration: 200
+                            });
+                        }
+                }
+                odometer_init();
+            </script>
+        
+        
+        
+    </div>  
+</footer>
         </div>
     </div>
 
